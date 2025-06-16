@@ -1,0 +1,115 @@
+.sidenav {
+    background-color: #388E3C;
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.sidenav a {
+  display: block;
+}  
+
+.logo img {
+  width: 108px;
+  height: 108px;
+  padding-bottom: 80px;
+} 
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  padding-bottom: 50px;
+}
+
+.icons img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.logout {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.logout img {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 30px;
+}
+
+.logout img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.active {
+    opacity: 0.5;
+}
+
+.main {
+  margin-left: 210px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+
+.main h1 {
+  font-size: 36px;
+  font-family: 'Arial', sans-serif;
+}
+
+.main p {
+  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 20px;
+  margin-right: 20px;
+}
+
+.topnav .notif-icon,
+.topnav .user-icon {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.topnav .notif-icon img,
+.topnav .user-icon img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.topnav .notif-icon img:hover,
+.topnav .user-icon img:hover {
+  opacity: 0.7;
+}
+
+.user-icon img {
+  vertical-align: middle;
+}
+
+.user-icon span {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
