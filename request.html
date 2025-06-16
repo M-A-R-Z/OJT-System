@@ -32,7 +32,7 @@
   <div class="main">
     <h1>Requests</h1>
   </div>
-  <button class="add-request-btn"> + Add New Request</button>
+  <button class="button"> + Add New Request</button>
   <table class="request-table">
     <thead>
       <tr>
@@ -94,40 +94,51 @@
 
     </table>
     <!-- Modal Structure -->
-    <div id="requestModal" class="modal" style="display:none;">
+    <div id="requestModal" class="modal">
         <div class="modal-content">
             <span class="close" id="closeModal">&times;</span>
-            <h2>Add New Request</h2>
+            <h1>Request Form</h1>
             <form id="addRequestForm">
-                <label for="requestId">Request ID:</label>
-                <input type="text" id="requestId" name="requestId" required>
-
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="items">Items:</label>
-                <input type="text" id="items" name="items" required>
-
-                <label for="service">Service:</label>
-                <input type="text" id="service" name="service" required>
-
-                <label for="requestingParty">Requesting Party:</label>
-                <input type="text" id="requestingParty" name="requestingParty" required>
-
-                <label for="recommendedBy">Recommended By:</label>
-                <input type="text" id="recommendedBy" name="recommendedBy" required>
-
-                <label for="status">Status:</label>
-                <select id="status" name="status" required>
-                    <option value="Pending">Pending</option>
-                    <option value="Approved">Approved</option>
-                    <option value="Rejected">Rejected</option>
-                </select>
-
-                <label for="dateExecuted">Date Executed:</label>
-                <input type="date" id="dateExecuted" name="dateExecuted" required>
-
-                <button type="submit" class="submit-btn">Submit</button>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="requestId">Items</label>
+                    <input class="input-items" type="text" id="requestId" name="requestId" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Service:</label>
+                    <input class="input-service" type="text" id="name" name="name" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="items">Requesting Party:</label>
+                    <input class="input-reqparty" type="text" id="items" name="items" required>
+                </div> 
+                <div class="form-group">
+                    <label for="service">Recommended By:</label>
+                    <input class="input-recommend" type="text" id="service" name="service" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="requestingParty">Status:</label>
+                    <select class="input-status" id="requestingParty" name="requestingParty" required>
+                        <option value="pending">Pending</option>
+                        <option value="approved">Approved</option>
+                        <option value="rejected">Rejected</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="recommendedBy">Date Executed:</label>
+                    <input class="input-date" type="date" id="recommendedBy" name="recommendedBy" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-button">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="reset" class="cancel-btn">Cancel</button>
+                </div>
+            </div>
             </form>
         </div>
     </div>

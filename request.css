@@ -38,7 +38,7 @@ th {
     font-weight: bold;
 }
 
-button {
+.button {
     background-color: #388E3C;
     color: #fff;
     border: none;
@@ -51,8 +51,8 @@ button {
     margin-left: 160px;
 }
 
-button:hover {
-    background-color: #1565c0;
+.button:hover {
+    background-color: #71CE7E;
 }
 
 td .action-icons {
@@ -60,6 +60,11 @@ td .action-icons {
     gap: 10px;
     flex-direction: row;
     align-items: center;
+}
+
+.action-icons img {
+    width: 20px;
+    height: 20px;
 }
 
 .action-icons img:hover {
@@ -79,6 +84,7 @@ td .action-icons {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     justify-content: center;
     align-items: center;
+    padding-top: 150px;
 }
 
 .modal.active {
@@ -91,9 +97,16 @@ td .action-icons {
     padding: 2rem 2.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.15);
-    max-width: 400px;
-    width: 90%;
+    max-width: 410px;
+    width: 100%;
     position: relative;
+}
+
+.modal-content h1 {
+    margin: 0 0 1rem;
+    font-size: 24px;
+    color: #2E7D32;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .close{
@@ -109,3 +122,102 @@ td .action-icons {
   text-decoration: none;
   cursor: pointer;
 }
+
+input[type="text"],
+input[type="date"],
+select {
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    align-items: flex-end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.input-items {
+    width: 120px; 
+}
+
+.input-service {
+    width: 250px; 
+}
+
+.input-reqparty {
+    width: 185px; 
+}
+
+.input-recommend {
+    width: 185px; 
+}
+
+.input-status {
+    width: 120px;
+}
+
+.input-date {
+    width: 260px;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.form-button .submit-btn {
+    background-color: #388E3C;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.form-button .submit-btn:hover {
+    background-color: #71CE7E;
+}
+
+.form-button .cancel-btn {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.form-button .cancel-btn:hover {
+    background-color: #e57373;
+}
+
+

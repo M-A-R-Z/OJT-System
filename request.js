@@ -1,6 +1,6 @@
 // Modal open/close logic
 const modal = document.getElementById('requestModal');
-const btn = document.querySelector('.add-request-btn');
+const btn = document.querySelector('.button');
 const span = document.getElementById('closeModal');
 
 btn.onclick = function() {
