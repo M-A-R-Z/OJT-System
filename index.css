@@ -1,7 +1,7 @@
 .sidenav {
     background-color: #388E3C;
     height: 100%;
-    width: 150px;
+    width: 120px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -16,14 +16,14 @@
 }  
 
 .logo img {
-  width: 108px;
-  height: 108px;
+  width: 88px;
+  height: 88px;
   padding-bottom: 80px;
 } 
 
 .icons img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   padding-bottom: 50px;
 }
 
@@ -41,8 +41,8 @@
 }
 
 .logout img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     padding-bottom: 30px;
 }
 
