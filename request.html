@@ -12,9 +12,9 @@
     <a href="index.html" class="logo"><img src="Logo.png"></a>
     <a href="index.html" class="icons" title="Dashboard"><img src="Dashboard Icon.png"></a>
     <a href="#home" class="icons" title="User Register"><img src="Register Icon.png"></a>
-    <a href="#home" class="icons" title="Requests"><img class="active" src="Requests Icon.png"></a>
-    <a href="#home" class="icons" title="Inventory"><img src="Inventory Icon.png"></a>
-    <a href="#home" class="logout" title="Logout"><img src="Log Out Icon.png"></a>
+    <a href="request.html" class="icons" title="Requests"><img class="active" src="Requests Icon.png"></a>
+    <a href="inventory.html" class="icons" title="Inventory"><img src="Inventory Icon.png"></a>
+    <a href="login.html" class="logout" title="Logout"><img src="Log Out Icon.png"></a>
   </div>
   <div class="topnav">
     <div class="notif-icon">
@@ -32,7 +32,7 @@
   <div class="main">
     <h1>Requests</h1>
   </div>
-  <button class="button"> + Add New Request</button>
+  <button class="button"> + New Request</button>
   <table class="request-table">
     <thead>
       <tr>
@@ -102,27 +102,27 @@
             <div class="form-row">
                 <div class="form-group">
                     <label for="requestId">Items</label>
-                    <input class="input-items" type="text" id="requestId" name="requestId" required>
+                    <input class="input-items" type="text" id="requestItems" name="requestItems" required>
                 </div>
                 <div class="form-group">
                     <label for="name">Service:</label>
-                    <input class="input-service" type="text" id="name" name="name" required>
+                    <input class="input-service" type="text" id="requestService" name="requestService" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group">
                     <label for="items">Requesting Party:</label>
-                    <input class="input-reqparty" type="text" id="items" name="items" required>
+                    <input class="input-reqparty" type="text" id="requestRP" name="requestRP" required>
                 </div> 
                 <div class="form-group">
                     <label for="service">Recommended By:</label>
-                    <input class="input-recommend" type="text" id="service" name="service" required>
+                    <input class="input-recommend" type="text" id="requestRB" name="requestRB" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group">
                     <label for="requestingParty">Status:</label>
-                    <select class="input-status" id="requestingParty" name="requestingParty" required>
+                    <select class="input-status" id="requestStatus" name="requestStatus" required>
                         <option value="pending">Pending</option>
                         <option value="approved">Approved</option>
                         <option value="rejected">Rejected</option>
@@ -130,7 +130,7 @@
                 </div>
                 <div class="form-group">
                     <label for="recommendedBy">Date Executed:</label>
-                    <input class="input-date" type="date" id="recommendedBy" name="recommendedBy" required>
+                    <input class="input-date" type="date" id="requestDate" name="requestDate" required>
                 </div>
             </div>
             <div class="form-row">

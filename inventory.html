@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="request.css">
+  <title>Office of Public Servants Database System</title>
+</head>
+<body>
+  <div class="sidenav">
+    <a href="index.html" class="logo"><img src="Logo.png"></a>
+    <a href="index.html" class="icons" title="Dashboard"><img src="Dashboard Icon.png"></a>
+    <a href="#home" class="icons" title="User Register"><img src="Register Icon.png"></a>
+    <a href="request.html" class="icons" title="Requests"><img src="Requests Icon.png"></a>
+    <a href="inventory.html" class="icons" title="Inventory"><img class="active" src="Inventory Icon.png"></a>
+    <a href="login.html" class="logout" title="Logout"><img src="Log Out Icon.png"></a>
+  </div>
+  <div class="topnav">
+    <div class="notif-icon">
+      <img src="Notif Icon.png" alt="Notifications">
+      </button>
+    </div>
+    <div class="user-icon">
+      <img src="User Icon.png" alt="User Icon">
+      <span>
+        <strong>Marson Carl</strong><br>
+        <small>Admin</small>
+      </span>
+    </div>
+  </div>
+  <div class="main">
+    <h1>Stocks Inventory</h1>
+  </div>
+  <button class="button"> + New Stock</button>
+  <table class="request-table">
+    <thead>
+        <tr>
+            <th>Units</th>
+            <th>Code</th>
+            <th>Items</th>
+            <th>Remaining No.</th>
+            <th>Pulled Out No.</th>
+            <th>Date</th>
+            <th>Issued By</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>10</td>
+            <td>INV-001</td>
+            <td>Laptop</td>
+            <td>7</td>
+            <td>3</td>
+            <td>2023-10-01</td>
+            <td>Mary Ann Cruz</td>
+            <td class="action-icons">
+                <img src="Delete Icon.png" alt="Delete">
+                <img src="Edit Icon.png" alt="Edit">
+            </td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>INV-002</td>
+            <td>Printer Ink</td>
+            <td>15</td>
+            <td>5</td>
+            <td>2023-10-02</td>
+            <td>Carlos Reyes</td>
+            <td class="action-icons">
+                <img src="Delete Icon.png" alt="Delete">
+                <img src="Edit Icon.png" alt="Edit">
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>INV-003</td>
+            <td>Office Chair</td>
+            <td>2</td>
+            <td>3</td>
+            <td>2023-10-03</td>
+            <td>Linda Gomez</td>
+            <td class="action-icons">
+                <img src="Delete Icon.png" alt="Delete">
+                <img src="Edit Icon.png" alt="Edit">
+            </td>
+        </tr>
+    </tbody>
+
+    </table>
+    <!-- Modal Structure -->
+    <div id="requestModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h1>Stock Inventory Form</h1>
+            <form id="addRequestForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="requestId">Units</label>
+                    <input class="input-items" type="text" id="inventoryUnits" name="inventoryUnits" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Code</label>
+                    <input class="input-service" type="text" id="inventoryCode" name="inventoryCode" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="items">Pulled out No.</label>
+                    <input class="input-reqparty" type="text" id="inventoryPN" name="inventoryPN" required>
+                </div> 
+                <div class="form-group">
+                    <label for="service">Pulled out By</label>
+                    <input class="input-recommend" type="text" id="inventoryPB" name="inventoryPB" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="requestingParty">Status</label>
+                    <select class="input-status" id="inventoryStatus" name="inventoryStatus" required>
+                        <option value="pending">Pending</option>
+                        <option value="approved">Approved</option>
+                        <option value="rejected">Rejected</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="recommendedBy">Date Executed</label>
+                    <input class="input-date" type="date" id="inventoryDate" name="inventoryDate" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-button">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="reset" class="cancel-btn">Cancel</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="request.js"></script>
+</body>
+</html>
