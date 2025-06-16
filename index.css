@@ -113,7 +113,7 @@
   display: flex;
   flex-direction: row;
   gap: 50px;
-  margin-left: 180px; 
+  margin-left: 150px; 
 }
 
 .card {
@@ -121,7 +121,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   padding: 24px 32px;
-  margin: 16px;
+  margin: 10px;
   display: inline-block;
   vertical-align: top;
   min-width: 200px;

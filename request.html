@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="request.css">
+  <title>Office of Public Servants Database System</title>
+</head>
+<body>
+  <div class="sidenav">
+    <a href="index.html" class="logo"><img src="Logo.png"></a>
+    <a href="index.html" class="icons" title="Dashboard"><img src="Dashboard Icon.png"></a>
+    <a href="#home" class="icons" title="User Register"><img src="Register Icon.png"></a>
+    <a href="#home" class="icons" title="Requests"><img class="active" src="Requests Icon.png"></a>
+    <a href="#home" class="icons" title="Inventory"><img src="Inventory Icon.png"></a>
+    <a href="#home" class="logout" title="Logout"><img src="Log Out Icon.png"></a>
+  </div>
+  <div class="topnav">
+    <div class="notif-icon">
+      <img src="Notif Icon.png" alt="Notifications">
+      </button>
+    </div>
+    <div class="user-icon">
+      <img src="User Icon.png" alt="User Icon">
+      <span>
+        <strong>Marson Carl</strong><br>
+        <small>Admin</small>
+      </span>
+    </div>
+  </div>
+  <div class="main">
+    <h1>Requests</h1>
+  </div>
+  <button class="add-request-btn"> + Add New Request</button>
+  <table class="request-table">
+    <thead>
+      <tr>
+        <th>Request ID</th>
+        <th>Name</th>
+        <th>Items</th>
+        <th>Service</th>
+        <th>Requesting Party</th>
+        <th>Recommended By</th>
+        <th>Status</th>
+        <th>Date Executed</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>REQ-001</td>
+        <td>John Doe</td>
+        <td>Laptop, Projector</td>
+        <td>IT Support</td>
+        <td>Finance Department</td>
+        <td>Mary Ann Cruz</td>
+        <td>Pending</td>
+        <td>2023-10-01</td>
+        <td class="action-icons">
+          <img src="Delete Icon.png" alt="Delete">
+          <img src="Edit Icon.png" alt="Edit">
+        </td>
+      </tr>
+      <tr>
+        <td>REQ-002</td>
+        <td>Jane Smith</td>
+        <td>Printer Ink</td>
+        <td>Supply Request</td>
+        <td>HR Department</td>
+        <td>Carlos Reyes</td>
+        <td>Approved</td>
+        <td>2023-10-02</td>
+        <td class="action-icons">
+          <img src="Delete Icon.png" alt="Delete">
+          <img src="Edit Icon.png" alt="Edit">
+        </td>
+      </tr>
+      <tr>
+        <td>REQ-003</td>
+        <td>Michael Tan</td>
+        <td>Office Chair</td>
+        <td>Maintenance</td>
+        <td>Admin Office</td>
+        <td>Linda Gomez</td>
+        <td>Rejected</td>
+        <td>2023-10-03</td>
+        <td class="action-icons">
+          <img src="Delete Icon.png" alt="Delete">
+          <img src="Edit Icon.png" alt="Edit">
+        </td>
+      </tr>
+    </tbody>
+
+    </table>
+    <!-- Modal Structure -->
+    <div id="requestModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Add New Request</h2>
+            <form id="addRequestForm">
+                <label for="requestId">Request ID:</label>
+                <input type="text" id="requestId" name="requestId" required>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="items">Items:</label>
+                <input type="text" id="items" name="items" required>
+
+                <label for="service">Service:</label>
+                <input type="text" id="service" name="service" required>
+
+                <label for="requestingParty">Requesting Party:</label>
+                <input type="text" id="requestingParty" name="requestingParty" required>
+
+                <label for="recommendedBy">Recommended By:</label>
+                <input type="text" id="recommendedBy" name="recommendedBy" required>
+
+                <label for="status">Status:</label>
+                <select id="status" name="status" required>
+                    <option value="Pending">Pending</option>
+                    <option value="Approved">Approved</option>
+                    <option value="Rejected">Rejected</option>
+                </select>
+
+                <label for="dateExecuted">Date Executed:</label>
+                <input type="date" id="dateExecuted" name="dateExecuted" required>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="request.js"></script>
+</body>
+</html>
