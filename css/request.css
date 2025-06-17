@@ -181,7 +181,7 @@ label {
     display: flex;
     justify-content: center;
     max-width: 400px;
-    margin: 20px auto;
+    justify-content: center;
 }
 
 .form-button .submit-btn {
@@ -213,7 +213,7 @@ label {
     transition: background 0.2s;
     font-family: Arial, sans-serif;
     text-align: center;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .form-button .cancel-btn:hover {
