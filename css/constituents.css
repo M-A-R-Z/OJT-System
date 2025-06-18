@@ -53,5 +53,17 @@
   cursor: pointer;
   border-radius: 4px;
   font-size: 12px;
+  margin-left: 5px;
+}
+
+.delete-btn {
+  background-color: #ddd;
+  border: none;
+  padding: 4px 8px;
+  float: right;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 5px;
 }
 
